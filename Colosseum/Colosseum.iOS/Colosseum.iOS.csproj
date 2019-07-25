@@ -164,4 +164,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\upcoming_movies%402x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\star_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\star_icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\star_icon%403x.png" />
+  </ItemGroup>
 </Project>

@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
@@ -92,13 +91,24 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\ellipse.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ellipse.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ellipse.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ellipse.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ellipse.png" />
+    <AndroidResource Include="Resources\drawable\play_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\play_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\play_icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\play_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\play_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\play_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\star_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Colosseum\Colosseum.csproj">
-      <Project>{1BC75D9F-BCC2-4A9F-82C8-5E8C510EC2B7}</Project>
+      <Project>{A4CF0443-7EC1-4D68-8CAB-6AB417D97988}</Project>
       <Name>Colosseum</Name>
     </ProjectReference>
   </ItemGroup>

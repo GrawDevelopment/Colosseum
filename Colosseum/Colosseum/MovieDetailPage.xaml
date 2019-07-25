@@ -12,8 +12,69 @@
                 <RowDefinition Height="0.1*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Image Grid.Row="0" Grid.RowSpan="4" Aspect="Fill"></Image>
-            <BoxView Grid.Row="0" Grid.RowSpan="4" BackgroundColor="Black" Opacity="0.6"></BoxView>
+            <Image  x:Name="ImageCover"  Grid.Row="0" Grid.RowSpan="4" Aspect="Fill"/>
+            <BoxView Grid.Row="0" Grid.RowSpan="4" BackgroundColor="Black" Opacity="0.6"/>
+            <Label  Grid.Row = "1"  x:Name ="LabelMovie" TextColor = "White" FontSize ="24" Margin="15,0,0,0" />
+            <StackLayout Grid.Row = "2" Margin ="5,0,0,0" HorizontalOptions = "FillAndExpand" VerticalOptions ="FillAndExpand">
+               <Grid>
+                    <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.4*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                
+            </Grid.ColumnDefinitions>
+                    <Image Source = "ellipse.png" Grid.Column="0" Aspect="AspectFit"/>
+                    <Label TextColor = "White" Grid.Column="0"  FontSize="13" HorizontalOptions="Center" VerticalOptions="Center" x:Name="LabelPg"/>
+                    <Label TextColor = "Black" Grid.Column="1"   HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White" x:Name="LabelDuration"/>
+                    <Label TextColor = "Black" Grid.Column="2"   HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White" x:Name ="LabelLanguage"/>
+                </Grid>
+            
+            </StackLayout>
+            <Image Source="play_icon.png" HorizontalOptions="End" Margin="0,0,20,0" Grid.Row ="3" Grid.RowSpan="2" />
+            <StackLayout Grid.Row="5"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                <Label Margin="5,0,0,0">
+                    <Label.FormattedText>
+                       <FormattedString >
+                            <Span TextColor ="Black" FontSize ="16" FontAttributes="Bold" Text ="Genre:"/>
+                            <Span TextColor ="Black" FontSize ="16"  x:Name="LabelGenre"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                    
+                </Label>
+                <Label Margin="5,0,0,0">
+                    <Label.FormattedText>
+                       <FormattedString >
+                            <Span TextColor ="Black" FontSize ="16" FontAttributes="Bold" Text ="Playing Date"/>
+                            <Span TextColor ="Black" FontSize ="16"  x:Name="LabelDate"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                    
+                </Label>
+                <Label Margin="5,0,0,0">
+                    <Label.FormattedText>
+                       <FormattedString >
+                            <Span TextColor ="Black" FontSize ="16" FontAttributes="Bold" Text ="Starring"/>
+                            <Span TextColor ="Black" FontSize ="16"  x:Name ="LabelStar"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                    
+                </Label>
+                
+                <ScrollView>
+                    <Label Margin="5,0,0,0">
+                    <Label.FormattedText>
+                       <FormattedString >
+                            <Span TextColor ="Black" FontSize ="16" FontAttributes="Bold" Text ="Description"/>
+                            <Span TextColor ="Black" FontSize ="16"  x:Name ="LabelDescription"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                    
+                </Label>
+                    
+                </ScrollView>
+                <Button HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" TextColor="White" BackgroundColor="#FF5722" FontSize="24" Text="Book Ticket"/>
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

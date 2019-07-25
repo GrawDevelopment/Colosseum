@@ -133,12 +133,18 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Colosseum\Colosseum.csproj">
-      <Project>{1BC75D9F-BCC2-4A9F-82C8-5E8C510EC2B7}</Project>
+      <Project>{A4CF0443-7EC1-4D68-8CAB-6AB417D97988}</Project>
       <Name>Colosseum</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\upcoming_movies%403x.png" />
+    <BundleResource Include="Resources\ellipse.png" />
+    <BundleResource Include="Resources\ellipse%402x.png" />
+    <BundleResource Include="Resources\ellipse%403x.png" />
+    <BundleResource Include="Resources\play_icon.png" />
+    <BundleResource Include="Resources\play_icon%402x.png" />
+    <BundleResource Include="Resources\play_icon%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\latest_movies.png" />

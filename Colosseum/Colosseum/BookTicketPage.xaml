@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Colosseum.BookTicketPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal" Margin="5">
+                <Image x:Name="MovieImage" HeightRequest="60" WidthRequest="60" Aspect="AspectFill"/>
+                <StackLayout>
+                    <Label x:Name="MovieNameLabel" FontSize="16" TextColor="Black" ></Label>
+                    <StackLayout Orientation="Horizontal">
+                        <Label FontSize="16" TextColor="Black" FontAttributes="Bold" Text="Playing Date"/>
+                        <Label FontSize="16" TextColor="Black" x:Name="DateLabel"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Margin="25,10,25,0">
+                <Label FontSize="16" TextColor="Black" FontAttributes="Bold" Text="Choose Item" />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Frame x:Name="Frame1" HeightRequest="40" WidthRequest="85" HorizontalOptions="StartAndExpand" BackgroundColor="#FF5722" CornerRadius="20" Padding="0">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="Tab1" Tapped="Tab1_OnTapped"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <Label HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" FontAttributes="Bold" x:Name="Time1Label"/>
+                    </Frame>
+                    <Frame x:Name="Frame2" HeightRequest="40" WidthRequest="85" HorizontalOptions="CenterAndExpand" BackgroundColor="#FF5722" CornerRadius="20" Padding="0">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="Tab2" Tapped="Tab2_OnTapped"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <Label HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" FontAttributes="Bold" x:Name="Time2Label"/>
+                    </Frame>
+                    <Frame  x:Name="Frame3" HeightRequest="40" WidthRequest="85" HorizontalOptions="EndAndExpand" BackgroundColor="#FF5722" CornerRadius="20" Padding="0">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="Tab3" Tapped="Tab3_OnTapped"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <Label HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" FontAttributes="Bold" x:Name="Time3Label"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="35,35,35,0">
+                    <Entry x:Name="EmailEntry" Placeholder="Name" PlaceholderColor="LightGray"/>
+                    <Entry x:Name="NameEntry"  Placeholder="Email" PlaceholderColor="LightGray"/>
+                    <Entry x:Name="PhoneEntry" Placeholder="Phone" PlaceholderColor="LightGray"/>
+                    <Picker x:Name="Picker" Title="Ticket Qt" >
+                        <Picker.Items>
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <Label HorizontalOptions="EndAndExpand" TextColor="Black" FontSize="16">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text ="Total Price:" />
+                                <Span x:Name="Quantity"  />
+                                <Span Text ="x" />
+                                <Span x:Name="UnitPrice"  />
+                                <Span Text ="=" />
+                                <Span x:Name="TotalPrice" />
+                                <Span Text ="$" />
+
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+            <Button  x:Name="ButtonBook" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="#FF5722" Text="Book Now"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -24,15 +24,9 @@ namespace Colosseum.Model
         public string TrailorLink { get; set; }
         public string Logo { get; set; }
 
-        public string CoverImage
-        {
-            get
-            {
-                return String.Format("http://colosseum.somee.com/{0}", Logo.Substring(1));
+        public string CoverImage => String.Format("http://colosseum.somee.com/{0}", Logo.Substring(1));
 
-            }
-            
-        }
+        public string MovieTrailor => TrailorLink.Replace("watch?v=", "embed/");
 
         public object LogoFile { get; set; }
 

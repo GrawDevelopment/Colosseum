@@ -18,5 +18,6 @@ namespace Colosseum.Model
         public string TrailorLink { get; set; }
         public string Logo { get; set; }
         public object LogoFile { get; set; }
+        public string CoverImage => String.Format("http://colosseum.somee.com/{0}", Logo.Substring(1));
     }
 }
